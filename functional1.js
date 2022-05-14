@@ -1,3 +1,9 @@
 function Greet(name){
-    console.log(`hello ${name}`)
+    console.log(`hello ${name }buddy`)
+}
+
+function RecursiveFibonacci(n){
+    if(n===0)return 0;
+    if(n===1) return 1;
+    return RecursiveFibonacci(n-2) + RecursiveFibonacci(n-1)
 }
