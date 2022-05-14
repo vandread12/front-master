@@ -24,3 +24,5 @@ function filter(predicateFn, array) {
     const filteredFirst = predicateFn(firstItem) ? [firstItem] : [];
     return concat(filteredFirst, filter(predicateFn, tail(array)));
   }
+
+greaterThanFour = filter(n => n>4, wholes)
