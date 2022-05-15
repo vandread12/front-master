@@ -26,3 +26,19 @@ function filter(predicateFn, array) {
   }
 
 greaterThanFour = filter(n => n>4, wholes)
+
+function greet(greeting,name){
+  return `${greeting}, ${name}!`
+}
+
+function curryGreet(greeting){
+  return function(name){
+    return `${greeting}, ${name}!`
+  }
+};
+
+const greetItal =  curryGreet('Ciao');
+greetItal('Alonso');
+
+const greetTex = curryGreet('Howdy');
+greetTex('Alonso');
